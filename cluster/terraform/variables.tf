@@ -33,3 +33,9 @@ variable "remote_pod_cidr" {
   type        = string
   default     = "10.53.0.0/16"
 }
+
+variable "region" {
+  description = "Region."
+  type        = string
+  default     = "eu-west-2"
+}
