@@ -6,12 +6,12 @@ spec:
   amiFamily: AL2023
   amiSelectorTerms:
     - alias: al2023@latest
-  role: "${KARPENTER_ROLE}"
+  role: "arn:aws:iam::651706780852:role/KarpenterNodeRole-adritest"
   subnetSelectorTerms:
     - tags:
-        karpenter.sh/discovery: $EKS_CLUSTER_NAME
+        karpenter.sh/discovery: adritest
   securityGroupSelectorTerms:
     - tags:
-        karpenter.sh/discovery: $EKS_CLUSTER_NAME
+        karpenter.sh/discovery: adritest
   tags:
     app.kubernetes.io/created-by: eks-workshop
